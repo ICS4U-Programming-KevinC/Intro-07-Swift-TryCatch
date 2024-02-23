@@ -17,11 +17,10 @@ var radString: String = readLine()!
 // Cast the input to a double.
 var radDouble: Double = Double(radString)!
 
-if (radDouble < 0) {
+if radDouble < 0 {
     // Tell user they cant have a negative number.
     print("You can't have a negative radius!")
-}
-else {
+} else {
     // Calculate the volume of the sphere.
     let volume: Double = ((4/3.0) * Double.pi * pow(radDouble, 3))
 
