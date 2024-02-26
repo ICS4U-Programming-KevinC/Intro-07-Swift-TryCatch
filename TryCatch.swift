@@ -11,7 +11,7 @@
 import Foundation
 
 enum InputError: Error {
-    case NonNumber
+    case nonNumber
 }
 
 do {
@@ -36,6 +36,6 @@ do {
         // Tell the user the volume of their sphere.
         print("The volume of your sphere is: " + String(volume))
     }
-} catch InputError.NonNumber {
+} catch InputError.nonNumber {
     print("There was an error, ensure you made a correct numerical input!")
 }
