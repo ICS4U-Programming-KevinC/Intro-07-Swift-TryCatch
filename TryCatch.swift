@@ -18,12 +18,12 @@ do {
     // Ask user for their radius.
     print("This program calculates the volume of a sphere!!\nWhat is the radius of your sphere?")
     guard let radString = readLine() else {
-        throw InputError.NonNumber
+        throw InputError.nonNumber
     }
 
     // Cast the input to a double.
     guard let radDouble = Double(radString) else {
-        throw InputError.NonNumber
+        throw InputError.nonNumber
     }
 
     if radDouble < 0 {
